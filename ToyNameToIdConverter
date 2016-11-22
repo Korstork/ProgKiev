@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ToyNameToIdConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        System.out.println(getToyId(name));
+    }
+    public static int getToyId (String name){
+        switch (name){
+            case ("Car"):
+                return 0;
+            case "Lego":
+                return 1;
+            case "Doll":
+                return 2;
+            case "Puzzle":
+                return 3;
+            default: throw new IllegalArgumentException("Нет такой игрушки");
+        }
+    }
+}
