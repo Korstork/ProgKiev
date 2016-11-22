@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class RangeWithStepPrinter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int last = scanner.nextInt();
+        int step = scanner.nextInt();
+        printRange(first, last, step);
+
+    }
+    public static void printRange (int first, int last, int step){
+        if (first<last){
+            for (int i = first; first<=last; first+=step){
+                if (step>0){
+                    System.out.print(first+" ");
+                } else {
+                    throw new IllegalArgumentException("Ошибка условия");
+                }
+            }
+        }
+        else if (first>last){
+            for (int i=first; first>=last; first+=step){
+                if (step<0){
+                    System.out.print(first+" ");
+                } else {
+                    throw new IllegalArgumentException("Ошибка условия");
+                }
+            }
+        }
+    }
+}
