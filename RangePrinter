@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class RangePrinter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int last = scanner.nextInt();
+        printRange(first, last);
+    }
+
+    public static void printRange(int first, int last){
+        if (first<last){
+            for (int i=first; first<=last; first++){
+                System.out.print(first+" ");
+            }
+        }
+        else if (first>last){
+            for (int i = first; first >=last; first--) {
+                System.out.print(first+" ");
+            }
+        }
+        else if (first==last) System.out.println(first+" ");
+    }
+}
