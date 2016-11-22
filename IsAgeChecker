@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class IsAgeChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int age = scanner.nextInt();
+    }
+    public boolean isAge (int age){
+        return (age>0 && age<=120 || age==0 && age>120 ? true : false);
+    }
+}
