@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class AgeParser {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String ageString = scanner.next();
+        int a = parseAge(ageString);
+        System.out.println(a);
+    }
+    public static int parseAge(String ageString) {
+        int parseAge = Integer.parseInt(ageString);
+        if (parseAge>0 && parseAge<=120);
+        else if (parseAge<0 || parseAge>120){
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
+        return parseAge;
+    }
+}
