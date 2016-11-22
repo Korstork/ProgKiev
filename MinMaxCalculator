@@ -1,0 +1,14 @@
+public class MinMaxCalculator {
+
+    public static void main(String[] args) {
+        int a = 5;
+        int b = -2;
+        System.out.print("max = "+ max(a, b)+" "+ "min = "+ min(a, b));
+    }
+    public static int max (int a, int b){
+        return a>b ? a : b;
+    }
+    public static int min (int a, int b){
+        return a<b ? a : b;
+    }
+}
