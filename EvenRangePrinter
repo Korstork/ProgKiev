@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class EvenRangePrinter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int last = scanner.nextInt();
+        printEvenRange(first,last);
+    }
+    public static void printEvenRange(int first, int last){
+        if (first<last){
+            for (int i = first; first < last; first++) {
+                if (first%2==0){
+                    System.out.print(first+" ");
+                }
+            }
+        }
+    }
+}
